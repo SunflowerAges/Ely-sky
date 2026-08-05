@@ -1,0 +1,23 @@
+name: Feature request
+description: Suggest an improvement to Ely-sky.
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem would this solve?
+      description: Describe the server-owner or player problem rather than only the proposed implementation.
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: Suggested behavior
+      description: Describe how you would like Ely-sky to behave.
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Additional context

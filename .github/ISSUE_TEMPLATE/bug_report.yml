@@ -1,0 +1,57 @@
+name: Bug report
+description: Report a reproducible Ely-sky problem.
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting a problem. Please remove credentials, IP addresses, or other private information before posting logs.
+  - type: input
+    id: elysky-version
+    attributes:
+      label: Ely-sky version
+      placeholder: "1.0.0"
+    validations:
+      required: true
+  - type: input
+    id: paper-version
+    attributes:
+      label: Paper version
+      placeholder: "26.2 build ..."
+    validations:
+      required: true
+  - type: input
+    id: java-version
+    attributes:
+      label: Java version
+      placeholder: "25"
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: Describe the problem and what you expected instead.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. ...
+        2. ...
+        3. ...
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant logs or diagnostics
+      description: Paste relevant console output or a redacted diagnostics report.
+      render: shell
+  - type: textarea
+    id: notes
+    attributes:
+      label: Anything else?
